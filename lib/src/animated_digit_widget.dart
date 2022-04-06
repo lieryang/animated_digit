@@ -870,7 +870,7 @@ class _AnimatedSingleWidgetState extends State<_AnimatedSingleWidget> {
   Widget _build() {
     if (isNumber) {
       return ScrollConfiguration(
-        behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
+        behavior: ScrollConfiguration.of(context),
         child: _buildDigitScrollContainer(),
       );
     }
